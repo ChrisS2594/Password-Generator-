@@ -22,13 +22,13 @@ let integerarray =['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
    
    
    
-    function generate(upperletterarray , lowerletterarray , unicodearray , integerarray) {
-        return upperletterarray + lowerletterarray + unicodearray + integerarray;
-
+    function generate(upperletterarray , lowerletterarray , unicodearray , integerarray){ 
+        return placeholder = upperletterarray[Math.floor(Math.random() * upperletterarray.length) ] + lowerletterarray[Math.floor(Math.random() * lowerletterarray.length)] +
+        unicodearray[Math.floor(Math.random() * unicodearray.length)] + integerarray[Math.floor(Math.random() * integerarray.length)];
     };
     console.log("generate");
+    document.getElementById("password").innerHTML = myFunction("generate");
 
-document.getElementById("password");
 
 
 
